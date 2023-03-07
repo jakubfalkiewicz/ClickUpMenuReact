@@ -1,0 +1,97 @@
+nav {
+  height: 5rem;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #dadfe9;
+  color: #2a2d34;
+  padding: 0 2rem;
+  font-size: 14px;
+  line-height: 100%;
+  .navbar-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    .navbar-left {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      .logo {
+        font-style: normal;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 800;
+      }
+      .tabs-container {
+        display: flex;
+        gap: 1.25rem;
+        .tab {
+          all: unset;
+          padding: 0 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+        }
+        .tab.active {
+          margin-top: 31px;
+          padding-bottom: 30px;
+          border-bottom: 2px solid #796be9;
+          .dropdown {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      @media (max-width: 1024px) {
+        .tabs-container {
+          gap: 0.5rem;
+        }
+      }
+    }
+    .navbar-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      // .contact {
+      // }
+      .sign-buttons {
+        display: flex;
+        gap: 0.625rem;
+        button {
+          border: none;
+          padding: 11px 14px;
+          border-radius: 0.5rem;
+        }
+        .sign-up-button {
+          color: white;
+          background-color: #796be9;
+          box-shadow: 0px 6px 16px rgba(121, 107, 233, 0.6);
+        }
+        // .log-in-button {
+        // }
+      }
+    }
+  }
+}
+//LAPTOP
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 0.75rem;
+    .navbar-container {
+      justify-content: space-between;
+      .navbar-left {
+        gap: 1rem;
+      }
+      .navbar-right {
+        gap: 1rem;
+      }
+    }
+  }
+}
+//TABLET
+@media (max-width: 850px) {
+}

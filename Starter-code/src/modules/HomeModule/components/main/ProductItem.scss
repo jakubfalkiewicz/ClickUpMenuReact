@@ -1,0 +1,25 @@
+.product-item {
+  display: flex;
+  height: 3.5rem;
+  gap: 0.625rem;
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .product-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 10rem;
+    .product-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+    }
+    .product-text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 140%;
+    }
+  }
+}
