@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  justify-content: center;
+  height: 5.5rem;
+  border-bottom: 1px solid #dadfe9;
+  .footer-component {
+    max-width: 72rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    .footer-phone {
+      background: #796bea;
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+      display: flex;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      &-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+      }
+      &-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+      }
+    }
+  }
+}

@@ -11,6 +11,7 @@ import integrationsIcon from "./images/Integrations.png"
 import viewsIcon from "./images/Views.png"
 import hierarchyIcon from "./images/Hierarchy.png"
 import automationsIcon from "./images/Automations.png"
+import phone from "./images/Phone.png"
 
 export {
     tasksIcon,
@@ -25,5 +26,6 @@ export {
     integrationsIcon,
     viewsIcon,
     hierarchyIcon,
-    automationsIcon
+    automationsIcon,
+    phone
   };

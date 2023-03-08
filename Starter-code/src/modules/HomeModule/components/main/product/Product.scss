@@ -5,16 +5,12 @@
   width: 100%;
   .product-tab,
   .platform-tab {
-    // border: 2px solid red;
-    padding: 2rem 0;
-
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 37.5%;
-    min-width: 450px;
+    max-width: 41rem;
     border-right: 1px solid #dadfe9;
-    padding-right: 1.5rem;
     .product-type {
       font-weight: 700;
       font-size: 14px;
@@ -24,9 +20,9 @@
     .product-items {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
       width: auto;
-      //   border: 2px solid blue;
     }
     .see-all-button {
       all: unset;
@@ -53,10 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 30%;
-    min-width: 200px;
+    max-width: 27rem;
     border-right: none;
-    padding-left: 1.5rem;
-    padding-right: none;
   }
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import "./HomePage.scss";
 import Navbar from "../../components/navbar/Navbar"
-import Product from "../../components/main/Product";
+import Product from "../../components/main/product/Product";
+import Footer from "../../components/footer/Footer";
 
 export const HomePage = () => {
 
@@ -11,9 +12,7 @@ export const HomePage = () => {
       <main>
         <Product />
       </main>
-      <footer>
-
-      </footer>
+      <Footer />
     </div>
   );
 };
