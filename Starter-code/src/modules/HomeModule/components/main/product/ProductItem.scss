@@ -2,6 +2,9 @@
   display: flex;
   height: 3.5rem;
   gap: 0.625rem;
+  padding: 0.875rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
   .icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -10,7 +13,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 10rem;
+    width: auto;
+    max-width: 10.25rem;
     .product-title {
       font-weight: 700;
       font-size: 14px;
@@ -22,4 +26,40 @@
       line-height: 140%;
     }
   }
+}
+.Tasks:hover {
+  background: #eef8f3;
+}
+.Docs:hover {
+  background: #e5f2fa;
+}
+.Goals:hover {
+  background: #fdf2f7;
+}
+.Whiteboards:hover {
+  background: #e9ecfe;
+}
+.Dashboards:hover {
+  background: #f1f0fd;
+}
+.Chat:hover {
+  background: #faf6e7;
+}
+.Templates:hover {
+  background: #f8e3e2;
+}
+.ClickApps:hover {
+  background: #f1f0fd;
+}
+.Integrations:hover {
+  background: #eee0f9;
+}
+.Views:hover {
+  background: #e5f9ef;
+}
+.Hierarchy:hover {
+  background: #f4ece3;
+}
+.Automations:hover {
+  background: #f9ead3;
 }

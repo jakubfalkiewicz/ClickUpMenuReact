@@ -9,7 +9,7 @@ interface ProductItemProps {
 
 function ProductItem({ icon, title, text }: ProductItemProps) {
     return (
-        <div className='product-item'>
+        <div className={`product-item`}>
             <img className='icon' alt="product-icon" src={icon}></img>
             <div className='product-item-content'>
                 <div className='product-title'>{title}</div>

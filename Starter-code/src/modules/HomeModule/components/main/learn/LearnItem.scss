@@ -1,0 +1,65 @@
+.learn-item {
+  display: flex;
+  height: 3.5rem;
+  gap: 0.625rem;
+  padding: 0.875rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .learn-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: auto;
+    max-width: 10.25rem;
+    .learn-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+    }
+    .learn-text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 140%;
+    }
+  }
+}
+.GettingStarted:hover {
+  background: #f1f0fd;
+}
+.ClickUpUniversity:hover {
+  background: #fdf2f7;
+}
+.Demos:hover {
+  background: #e5f2fa;
+}
+.Import:hover {
+  background: #eef8f3;
+}
+.Customers:hover {
+  background: #f9ead3;
+}
+.HelpDocs:hover {
+  background: #faf6e7;
+}
+.ProfessionalServices:hover {
+  background: #f8e3e2;
+}
+.VerifiedThirdPartyConsultants:hover {
+  background: #eee0f9;
+}
+// .Integrations:hover {
+//   background: #eee0f9;
+// }
+// .Views:hover {
+//   background: #e5f9ef;
+// }
+// .Hierarchy:hover {
+//   background: #f4ece3;
+// }
+// .Automations:hover {
+//   background: #f9ead3;
+// }

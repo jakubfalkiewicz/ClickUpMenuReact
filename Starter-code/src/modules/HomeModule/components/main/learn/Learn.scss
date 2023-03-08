@@ -1,0 +1,114 @@
+.learn-component {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dadfe9;
+  width: 100%;
+  .learn-tab,
+  .platform-tab {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 42.5rem;
+    border-right: 1px solid #dadfe9;
+    .learn-type {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.06em;
+      padding-left: 0.875rem;
+      .learn-type-price {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0.06em;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.375rem;
+      }
+      .free {
+        background: #eef7f3;
+        color: #5bb486;
+      }
+      .paid {
+        background: #fdf2f1;
+        color: #e8827a;
+      }
+    }
+    .learn-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: auto;
+    }
+    .learn-items-2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.25rem;
+      .learn-item {
+        height: auto;
+      }
+      .learn-item-content {
+        max-width: 16rem;
+        .learn-text {
+          max-width: 15.125rem;
+        }
+      }
+    }
+  }
+  .platform-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    max-width: 30.5rem;
+    min-width: 17rem;
+    border-right: none;
+    .learn-type {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0;
+      &-show-more {
+        display: flex;
+        gap: 0.625rem;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+    .learn-latest {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      &-box {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      &-thumbnail {
+        min-width: 93px;
+        min-height: 61px;
+        background: #f2e0e0;
+        border-radius: 0.5rem;
+      }
+      &-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        max-width: 14.5rem;
+        word-wrap: nowrap;
+        min-width: 10rem;
+      }
+    }
+  }
+}

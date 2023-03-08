@@ -8,7 +8,6 @@ import ProductItem from './ProductItem'
 
 
 function Product() {
-    // console.log(cupIcon)
     return (
         <div className='product-component'>
             <div className='product-tab'>

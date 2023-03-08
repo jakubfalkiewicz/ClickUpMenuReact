@@ -1,18 +1,30 @@
 import React, { useState } from 'react'
-import { RiArrowDownSLine } from "react-icons/ri";
 import "./Navbar.scss";
+import { dropdown } from "@/assets"
 
-function Navbar() {
-    const [activeButton, setActiveButton] = useState<number>(1);
+interface NavbarProps {
+    activePage: number,
+    setPage: (page: number) => void
+}
+
+
+function Navbar({ activePage, setPage }: NavbarProps) {
+    const [activeButton, setActiveButton] = useState<number>(activePage);
+
+    function handlePageChange(page: number) {
+        setActiveButton(page)
+        setPage(page)
+    }
+
     return (
         <nav>
             <div className='navbar-container'>
                 <div className='navbar-left'>
                     <div className='logo'>ClickUp</div>
                     <div className='tabs-container'>
-                        <button className={`tab ${activeButton === 1 ? "active" : ""}`} onClick={() => setActiveButton(1)}><div>Product</div><RiArrowDownSLine className="dropdown" size={20} /></button>
-                        <button className={`tab ${activeButton === 2 ? "active" : ""}`} onClick={() => setActiveButton(2)}><div>Solutions</div><RiArrowDownSLine className="dropdown" size={20} /></button>
-                        <button className={`tab ${activeButton === 3 ? "active" : ""}`} onClick={() => setActiveButton(3)}><div>Learn</div><RiArrowDownSLine className="dropdown" size={20} /></button>
+                        <button className={`tab ${activeButton === 1 ? "active" : ""}`} onClick={() => handlePageChange(1)}><div>Product</div><img src={dropdown} alt="dropdown"></img></button>
+                        <button className={`tab ${activeButton === 2 ? "active" : ""}`} onClick={() => handlePageChange(2)}><div>Solutions</div><img src={dropdown} alt="dropdown"></img></button>
+                        <button className={`tab ${activeButton === 3 ? "active" : ""}`} onClick={() => handlePageChange(3)}><div>Learn</div><img src={dropdown} alt="dropdown"></img></button>
                         <div className='tab non-dropdown'><div>Pricing</div></div>
                         <div className='tab non-dropdown'><div>Enterprise</div></div>
                     </div>
