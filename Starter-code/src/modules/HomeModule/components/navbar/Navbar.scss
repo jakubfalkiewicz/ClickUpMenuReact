@@ -99,6 +99,13 @@ nav {
           background: #dee1ea;
         }
       }
+      img {
+        cursor: pointer;
+        display: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1rem;
+      }
     }
   }
 }
@@ -121,5 +128,27 @@ nav {
   }
 }
 //TABLET
-@media (max-width: 850px) {
+@media (max-width: 834px) {
+  nav {
+    height: 5.5rem;
+    padding: 0 1rem;
+    .navbar-container {
+      .navbar-left {
+        .logo {
+          padding-left: 0.5rem;
+        }
+        .tabs-container {
+          display: none;
+        }
+      }
+      .navbar-right {
+        img {
+          display: flex;
+        }
+      }
+    }
+    .contact {
+      display: none;
+    }
+  }
 }

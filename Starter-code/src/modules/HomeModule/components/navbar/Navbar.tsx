@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.scss";
-import { dropdown } from "@/assets"
+import { dropdown, menuBurgerIcon } from "@/assets"
+import Sidebar from './Sidebar';
 
 interface NavbarProps {
     activePage: number,
@@ -10,6 +11,7 @@ interface NavbarProps {
 
 function Navbar({ activePage, setPage }: NavbarProps) {
     const [activeButton, setActiveButton] = useState<number>(activePage);
+    const [activeSidebar, setActiveSidebar] = useState<boolean>(false)
 
     function handlePageChange(page: number) {
         setActiveButton(page)
@@ -35,7 +37,9 @@ function Navbar({ activePage, setPage }: NavbarProps) {
                         <button className="sign-up-button">Sign Up</button>
                         <button className="log-in-button">Log In</button>
                     </div>
+                    <img src={menuBurgerIcon} alt="menu-burger" onClick={() => setActiveSidebar(!activeSidebar)}></img>
                 </div>
+                {activeSidebar && <Sidebar setActive={setActiveSidebar} />}
             </div>
         </nav>
     )

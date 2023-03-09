@@ -6,7 +6,7 @@ import {
     marketingIcon,
     designIcon,
     humanResourcesIcon,
-    operaionsIcon, arrowPink,
+    operationsIcon, arrowPink,
     projectManagementIcon,
     remoteWorkIcon,
     crmIcon,
@@ -28,7 +28,7 @@ function Solution() {
                     <SolutionItem icon={marketingIcon} title="Marketing" text="Collaborate on campaigns, clients, content and more." />
                     <SolutionItem icon={designIcon} title="Design" text="Streamline workflows, files and feedback." />
                     <SolutionItem icon={humanResourcesIcon} title="Human Resources" text="Manage, train and nurture your talent in one place." />
-                    <SolutionItem icon={operaionsIcon} title="Operations" text="Streamline workflows to increase business efficiency." />
+                    <SolutionItem icon={operationsIcon} title="Operations" text="Streamline workflows to increase business efficiency." />
                 </div>
                 <button className='see-all-button'><div>See All Features</div><img src={arrowPink}></img></button>
             </div>

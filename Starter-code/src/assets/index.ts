@@ -18,7 +18,7 @@ import productIcon from "./images/Product.png"
 import marketingIcon from "./images/Marketing.png"
 import designIcon from "./images/Design.png"
 import humanResourcesIcon from "./images/HumanResources.png"
-import operaionsIcon from "./images/Operations.png"
+import operationsIcon from "./images/Operations.png"
 import arrowPink from "./images/ArrowPink.png"
 import projectManagementIcon from "./images/ProjectManagement.png"
 import remoteWorkIcon from "./images/RemoteWork.png"
@@ -34,7 +34,8 @@ import customersIcon from "./images/Customers.png"
 import helpDocsIcon from "./images/HelpDocs.png"
 import professionalServicesIcon from "./images/ProfessionalServices.png"
 import verifiedConsultantsIcon from "./images/VerifiedConsultants.png"
-
+import menuBurgerIcon from "./images/MenuBurger.png"
+import disableIcon from "./images/delete-disabled.png"
 
 export {
   tasksIcon,
@@ -57,7 +58,7 @@ export {
   marketingIcon,
   designIcon,
   humanResourcesIcon,
-  operaionsIcon,
+  operationsIcon,
   arrowPink,
   projectManagementIcon,
   remoteWorkIcon,
@@ -72,5 +73,7 @@ export {
   customersIcon,
   helpDocsIcon,
   professionalServicesIcon,
-  verifiedConsultantsIcon
+  verifiedConsultantsIcon,
+  menuBurgerIcon,
+  disableIcon
 };

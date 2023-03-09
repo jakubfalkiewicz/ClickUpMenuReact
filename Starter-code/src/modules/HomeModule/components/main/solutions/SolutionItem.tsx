@@ -9,7 +9,7 @@ interface SolutionItemProps {
 
 function SolutionItem({ icon, title, text }: SolutionItemProps) {
     return (
-        <div className={`solution-item ${title}`}>
+        <div className="solution-item">
             <img className='icon' alt="solution-icon" src={icon}></img>
             <div className='solution-item-content'>
                 <div className='solution-title'>{title}</div>

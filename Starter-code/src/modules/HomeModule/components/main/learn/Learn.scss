@@ -94,6 +94,10 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+        cursor: pointer;
+      }
+      &-box:hover {
+        color: #796be9;
       }
       &-thumbnail {
         min-width: 93px;

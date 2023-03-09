@@ -1,0 +1,97 @@
+.sidebar-component {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 24.25rem;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: white;
+  z-index: 3;
+  border-left: 1px solid;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Hide scrollbar in IE */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  .disable-box {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      cursor: pointer;
+      margin: 1.5rem 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  & &-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+  & &-menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    > img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  & &-menu-row.active {
+    margin-bottom: -1rem;
+  }
+  & &-menu-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .sign-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    button {
+      border: none;
+      padding: 17px 14px;
+      border-radius: 0.5rem;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .sign-up-button {
+      font-weight: 800;
+      color: white;
+      background-color: #796be9;
+      box-shadow: 0px 6px 16px rgba(121, 107, 233, 0.6);
+    }
+    .sign-up-button:hover {
+      background: #9487f8;
+    }
+    .sign-up-button:focus {
+      background: #6557d8;
+    }
+    .log-in-button {
+      line-height: 100%;
+      background: #e9ebf0;
+      box-shadow: 0px 6px 16px rgba(233, 235, 240, 0.6);
+    }
+    .log-in-button:hover {
+      background: #f4f5f8;
+    }
+    .log-in-button:focus {
+      background: #dee1ea;
+    }
+  }
+}
+/* Hide scrollbar in Chrome and Safari */
+.sidebar-component::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 835px) {
+  .sidebar-component {
+    display: none;
+  }
+}

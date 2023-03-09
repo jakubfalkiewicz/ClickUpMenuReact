@@ -1,0 +1,35 @@
+.sidebar-component-menu-table {
+  display: flex;
+  flex-direction: column;
+  .see-all-button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: #f1f0fd;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    div {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+    }
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  .table-2 {
+    border-top: 1px solid #dadfe9;
+    margin: 0 -1.5rem;
+    padding: 2.5rem 1.5rem 1rem 1.5rem;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+  }
+}
