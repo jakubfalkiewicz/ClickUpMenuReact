@@ -10,7 +10,7 @@
   height: 100%;
   background: white;
   z-index: 3;
-  border-left: 1px solid;
+  border-left: 1px solid #dadfe9;
   overflow-y: scroll;
   -ms-overflow-style: none; /* Hide scrollbar in IE */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
@@ -42,6 +42,9 @@
   }
   & &-menu-row.active {
     margin-bottom: -1rem;
+    > img {
+      transform: rotate(180deg);
+    }
   }
   & &-menu-item {
     font-weight: 700;

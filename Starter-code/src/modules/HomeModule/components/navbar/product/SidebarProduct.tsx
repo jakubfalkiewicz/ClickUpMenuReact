@@ -8,7 +8,7 @@ import {
 
 function SidebarProduct() {
     return (
-        <div className='sidebar-component-menu-table'>
+        <div className='sidebar-component-menu-product'>
             <SidebarRow text="Tasks" src={tasksIcon} />
             <SidebarRow text="Docs" src={docsIcon} />
             <SidebarRow text="Goals" src={goalsIcon} />

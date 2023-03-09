@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Sidebar.scss'
 import { disableIcon, dropdown } from '@/assets'
 import SidebarProduct from './product/SidebarProduct'
 import SidebarSolutions from './solutions/SidebarSolutions'
+import SidebarLearn from './learn/SidebarLearn'
 
 interface SidebarProps {
     setActive: (active: boolean) => void
@@ -12,10 +13,6 @@ function Sidebar({ setActive }: SidebarProps) {
     const [showProduct, setShowProduct] = useState<boolean>(false)
     const [showSolutions, setShowSolutions] = useState<boolean>(false)
     const [showLearn, setShowLearn] = useState<boolean>(false)
-
-    useEffect(() => {
-        console.log(showProduct, showSolutions, showLearn)
-    }, [showProduct, showSolutions, showLearn])
 
     return (
         <div className='sidebar-component'>
@@ -38,14 +35,14 @@ function Sidebar({ setActive }: SidebarProps) {
                     </img>
                 </div>
                 {showSolutions && <SidebarSolutions />}
-
-                <div className='sidebar-component-menu-row' onClick={() => setShowLearn(!showLearn)}>
+                <div className={`sidebar-component-menu-row ${showLearn ? 'active' : ''}`} onClick={() => setShowLearn(!showLearn)}>
                     <div className='sidebar-component-menu-item'>
                         Learn
                     </div>
                     <img src={dropdown}>
                     </img>
                 </div>
+                {showLearn && <SidebarLearn />}
                 <div className='sidebar-component-menu-row'>
                     <div className='sidebar-component-menu-item'>
                         Pricing
