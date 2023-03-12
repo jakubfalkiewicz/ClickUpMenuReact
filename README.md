@@ -1,3 +1,3 @@
-# INVO Passord Generator Project
-Simple project using react and typescript  
-[Live demo](https://invo-password-generator.netlify.app/) link
+# INVO ClickUp Menu Project
+Simple project using react and typescript, RWD.  
+[Live demo](https://invo-clickup-menu.netlify.app/) link
